@@ -1,0 +1,64 @@
+CHECKLIST PRE ENVIO - EXAMEN PDS 2026
+Fecha: 2026-07-01
+
+A) VALIDACION TECNICA PYTHON
+[ ] Ejecutar: python entrega_python/02_scripts_python/main.py
+[ ] Ejecutar: python entrega_python/03_agente_ia/agente_decision.py
+[ ] Verificar run log actualizado:
+    entrega_python/02_scripts_python/run_log.md
+[ ] Verificar agente:
+    entrega_python/03_agente_ia/resultados_agente.md
+[ ] Verificar artefactos en entrega_python/05_graficos/
+    (PNG via matplotlib o gnuplot; CSV solo si no hay backend grafico)
+
+B) VALIDACION TECNICA OCTAVE
+[ ] Confirmar octave en PATH:
+    octave --version
+[ ] Si no esta en PATH, usar ejecutable local:
+    "C:/Users/fernando/AppData/Local/Programs/GNU Octave/Octave-11.3.0/mingw64/bin/octave-cli.exe" --version
+[ ] Ejecutar:
+    octave --eval "addpath('entrega_octave/02_scripts_octave'); main"
+[ ] O ejecutar con ruta absoluta:
+    "C:/Users/fernando/AppData/Local/Programs/GNU Octave/Octave-11.3.0/mingw64/bin/octave-cli.exe" --quiet --eval "addpath('entrega_octave/02_scripts_octave'); main"
+[ ] Verificar run log:
+    entrega_octave/02_scripts_octave/run_log.md
+[ ] Verificar agente:
+    entrega_octave/03_agente_ia/resultados_agente.md
+[ ] Verificar tabla comparativa autogenerada:
+    entrega_octave/01_informe/tabla_comparativa_fir_iir.md
+[ ] Verificar PNG en entrega_octave/05_graficos/
+
+C) INFORMES Y DOCUMENTACION
+[ ] Revisar consistencia entre metricas y conclusiones:
+    entrega_python/01_informe/informe_final_borrador.md
+    entrega_octave/01_informe/informe_final_borrador.md
+[ ] Revisar bibliografia (minimo 5 referencias IEEE):
+    entrega_python/01_informe/bibliografia_ieee.md
+    entrega_octave/01_informe/bibliografia_ieee.md
+
+D) EMBEBIDO
+[ ] Revisar codigo de referencia ESP32:
+    entrega_python/04_codigo_embebido/filtro_embebido_esp32.ino
+    entrega_octave/04_codigo_embebido/filtro_embebido_esp32.ino
+[ ] Revisar pseudocodigo y arquitectura:
+    entrega_python/04_codigo_embebido/pseudocodigo_filtrado.md
+    entrega_octave/04_codigo_embebido/pseudocodigo_filtrado.md
+    entrega_octave/04_codigo_embebido/arquitectura_bloques.md
+
+E) EVIDENCIA ORAL Y VIDEO
+[ ] Grabar video Python con guion:
+    entrega_python/07_video/guion_video_presentacion.txt
+[ ] Grabar video Octave con guion:
+    entrega_octave/07_video/guion_video_presentacion.txt
+[ ] Preparar diapositivas Python:
+    entrega_python/08_presentacion/estructura_presentacion.txt
+[ ] Preparar diapositivas Octave:
+    entrega_octave/08_presentacion/estructura_presentacion.txt
+
+F) EMPAQUETADO FINAL
+[ ] Verificar estructura de carpetas 01..08 en ambas variantes
+[ ] Eliminar artefactos temporales no necesarios
+[ ] Comprimir por separado:
+    entrega_python.zip
+    entrega_octave.zip
+[ ] Comprobacion final: abrir zip y validar contenido interno

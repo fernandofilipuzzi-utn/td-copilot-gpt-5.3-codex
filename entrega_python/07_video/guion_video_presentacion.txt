@@ -1,0 +1,47 @@
+GUION VIDEO - ENTREGA PYTHON
+Duracion objetivo: 7 a 9 minutos
+
+[0:00 - 0:40] Introduccion
+- Presentar asignatura y objetivo del proyecto.
+- Explicar el problema: senal de vibracion con componentes utiles y ruido/interferencia.
+
+[0:40 - 1:30] Planteo del problema
+- fs=1000 Hz.
+- Componentes utiles: 30 Hz y 120 Hz.
+- Interferencia principal: 350 Hz.
+- Objetivo: preservar banda util 10-200 Hz y atenuar >280 Hz.
+
+[1:30 - 3:10] Diseno de filtros
+- FIR: ventana Hamming, 301 taps, fase lineal, D=150 muestras.
+- IIR: cascada biquad HP+LP (orden total 4), menor costo computacional.
+- Mostrar criterio tecnico de comparacion: fase, costo, atenuacion, SNR/RMSE.
+
+[3:10 - 4:40] Resultados de simulacion
+- Mostrar CSV/graficos de tiempo, frecuencia, impulso y retardo de grupo.
+- Reportar metricas:
+  SNR entrada: 2.886 dB
+  SNR salida FIR: 14.779 dB
+  SNR salida IIR: 5.878 dB
+  Rechazo >=280 Hz: FIR 78.993 dB, IIR 19.880 dB
+- Concluir: FIR ofrece mejor limpieza espectral y fidelidad.
+
+[4:40 - 5:50] Agente de decision IA
+- Variables de entrada: fs, RAM, MIPS, fase lineal, SNR, latencia, pendiente.
+- Mostrar 3 escenarios y recomendacion.
+- Explicar por que en hard real-time recomienda IIR y en analisis de fase recomienda FIR.
+
+[5:50 - 7:00] Implementacion embebida
+- Mostrar arquitectura adquisicion -> filtrado -> salida.
+- Mostrar codigo de referencia ESP32.
+- Explicar costo: FIR mas pesado, IIR mas liviano.
+
+[7:00 - 8:00] Cierre
+- Decision final del caso: FIR para diagnostico de rodamiento.
+- Trabajo futuro: corrida en hardware real y ajuste de reglas del agente.
+
+Checklist de evidencia visual minima:
+1) Consola mostrando ejecucion main.py
+2) Tabla comparativa FIR vs IIR
+3) Archivo agente_decision.py y resultados
+4) Codigo ESP32 y diagrama de bloques
+5) Conclusiones finales del equipo

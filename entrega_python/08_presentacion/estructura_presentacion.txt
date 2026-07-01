@@ -1,0 +1,22 @@
+ESTRUCTURA PRESENTACION - ENTREGA PYTHON (max 30 diapositivas)
+
+1. Caratula (1)
+2. Problema y motivacion (2)
+3. Senal y especificaciones tecnicas (2)
+4. Diseno FIR: fundamentos y ecuaciones (3)
+5. Diseno IIR: fundamentos y ecuaciones (3)
+6. Simulacion: dominio del tiempo (2)
+7. Simulacion: respuesta en frecuencia y FFT (2)
+8. Simulacion: retardo de grupo y polos/ceros (2)
+9. Comparativa FIR vs IIR (2)
+10. Agente de decision IA (3)
+11. Implementacion embebida (3)
+12. Conclusiones y recomendaciones (2)
+13. Referencias (1)
+
+Total sugerido: 25 diapositivas
+
+Mensajes clave por seccion:
+- El problema no es solo filtrar, sino justificar una arquitectura reproducible.
+- FIR maximiza fidelidad y rechazo; IIR minimiza costo/latencia.
+- El agente IA permite decisiones trazables segun restricciones de hardware.

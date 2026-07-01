@@ -1,0 +1,5 @@
+id,fs,ram_kb,mips,linear_phase_required,snr_in_db,max_latency_ms,steep_transition_required,expected
+ESC_01,1000,640,260,1,2.5,18,0,FIR
+ESC_02,1000,96,80,0,10.0,2,1,IIR
+ESC_03,1000,192,140,1,7.5,6,1,FIR
+ESC_04,1000,128,100,0,4.0,3,1,IIR

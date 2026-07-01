@@ -1,0 +1,40 @@
+GUION VIDEO - ENTREGA OCTAVE
+Duracion objetivo: 7 a 9 minutos
+
+[0:00 - 0:40] Introduccion
+- Presentar objetivo del examen integrador.
+- Caso elegido: monitoreo de condicion de rodamiento.
+
+[0:40 - 1:30] Modelo de senal
+- fs=1000 Hz.
+- Util: 30 Hz y 120 Hz.
+- Interferencia: 350 Hz + ruido blanco.
+
+[1:30 - 3:00] Diseno FIR e IIR
+- FIR Hamming, 301 taps, fase lineal.
+- IIR biquad HP+LP, orden 4, baja latencia.
+- Justificar trade-off fase/costo.
+
+[3:00 - 4:30] Simulacion en Octave
+- Ejecutar: octave --eval "addpath('entrega_octave/02_scripts_octave'); main"
+- Mostrar graficos generados en 05_graficos.
+- Mostrar tabla comparativa autogenerada.
+
+[4:30 - 5:40] Agente de decision
+- Mostrar escenarios CSV y salida del agente.
+- Comentar exactitud y ajuste de pesos para caso ESC_03.
+
+[5:40 - 7:00] Implementacion embebida
+- Mostrar diagrama de bloques y codigo ESP32.
+- Explicar buffers, latencia y representacion de coeficientes.
+
+[7:00 - 8:00] Conclusiones
+- Seleccion final segun restricciones reales del hardware.
+- Pendientes para validacion final en banco de pruebas.
+
+Checklist visual:
+1) Ejecucion de main.m en terminal
+2) Carpeta 05_graficos con figuras
+3) Tabla comparativa FIR vs IIR
+4) Resultados del agente IA
+5) Codigo embebido y cierre tecnico

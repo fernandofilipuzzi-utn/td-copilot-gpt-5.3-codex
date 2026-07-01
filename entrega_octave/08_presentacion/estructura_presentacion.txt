@@ -1,0 +1,23 @@
+ESTRUCTURA PRESENTACION - ENTREGA OCTAVE (max 30 diapositivas)
+
+1. Caratula (1)
+2. Contexto del problema (2)
+3. Senal y requerimientos (2)
+4. Diseno FIR (3)
+5. Diseno IIR (3)
+6. Resultados temporales (2)
+7. Resultados espectrales (2)
+8. Retardo de grupo y estabilidad (2)
+9. Tabla comparativa FIR vs IIR (2)
+10. Agente de decision y escenarios (3)
+11. Implementacion embebida ESP32 (3)
+12. Conclusiones y trabajo futuro (2)
+13. Referencias (1)
+
+Total sugerido: 26 diapositivas
+
+Ejes de defensa oral:
+- Coherencia matematica del diseno.
+- Evidencia cuantitativa de mejora del filtrado.
+- Criterio de ingenieria en la eleccion FIR/IIR.
+- Viabilidad de implementacion embebida.
